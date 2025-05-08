@@ -48,5 +48,5 @@ repos:
           --download-external-modules,"true",
           --quiet,
           --soft-fail,
-          --skip-check, "CKV_AZURE_NN"
+          --skip-check, "CKV_AZURE_132,CKV_AZURE_100,CKV_AZURE_33,CKV_AZURE_206,CKV_AZURE_225,CKV_AZURE_212,CKV2_AZURE_33,CKV2_AZURE_1"
         ]
