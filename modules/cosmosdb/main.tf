@@ -11,6 +11,12 @@ resource "azurerm_cosmosdb_account" "db" {
   offer_type          = "Standard"
   kind                = "GlobalDocumentDB"
 
+  public_network_access_enabled = false
+  local_authentication_disabled = true
+
+  network_acl_bypass_for_azure_services = true
+  is_virtual_network_filter_enabled     = true
+
   consistency_policy {
     consistency_level = "Session"
   }
