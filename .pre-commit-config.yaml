@@ -48,5 +48,28 @@ repos:
           --download-external-modules,"true",
           --quiet,
           --soft-fail,
-          --skip-check, "CKV_AZURE_132,CKV_AZURE_100,CKV_AZURE_33,CKV_AZURE_206,CKV_AZURE_225,CKV_AZURE_212,CKV2_AZURE_33,CKV2_AZURE_1"
+          --skip-check,
+          # Azure Key Vault should have firewall enabled
+          "CKV_AZURE_132",
+          --skip-check,
+          # Azure Storage Account should use HTTPS
+          "CKV_AZURE_100",
+          --skip-check,
+          # Azure SQL Database should have auditing enabled
+          "CKV_AZURE_33",
+          --skip-check,
+          # Azure App Service should use HTTPS only
+          "CKV_AZURE_206",
+          --skip-check,
+          # Azure Cosmos DB should have IP range filter
+          "CKV_AZURE_225",
+          --skip-check,
+          # Azure Kubernetes Service should have RBAC enabled
+          "CKV_AZURE_212",
+          --skip-check,
+          # Azure Function App should have HTTPS only
+          "CKV2_AZURE_33",
+          --skip-check,
+          # Azure Resource Group should have tags
+          "CKV2_AZURE_1"
         ]
