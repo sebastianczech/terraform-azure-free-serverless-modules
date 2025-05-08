@@ -3,11 +3,6 @@ variable "resource_group_name" {
   type        = string
 }
 
-variable "location" {
-  description = "The location/region where resources will be created"
-  type        = string
-}
-
 variable "storage_account_name" {
   description = "The name of the storage account"
   type        = string

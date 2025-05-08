@@ -42,7 +42,6 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_app_service_plan_name"></a> [app\_service\_plan\_name](#input\_app\_service\_plan\_name) | The name of the App Service Plan | `string` | n/a | yes |
 | <a name="input_function_app_name"></a> [function\_app\_name](#input\_function\_app\_name) | The name of the Function App | `string` | n/a | yes |
-| <a name="input_location"></a> [location](#input\_location) | The location/region where resources will be created | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group | `string` | n/a | yes |
 | <a name="input_storage_account_name"></a> [storage\_account\_name](#input\_storage\_account\_name) | The name of the storage account | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to be applied to resources | `map(string)` | `{}` | no |
