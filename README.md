@@ -32,7 +32,13 @@ cp example.tfvars terraform.tfvars
 vi terraform.tfvars
 ```
 
-3. Apply code for infrastructure:
+3. Check costs before deploying:
+
+```bash
+infracost breakdown --path=.
+```
+
+4. Apply code for infrastructure:
 
 ```bash
 terraform apply
