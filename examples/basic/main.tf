@@ -1,5 +1,10 @@
+module "abbreviations" {
+  source = "../../modules/abbreviations"
+}
+
+# https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group
 resource "azurerm_resource_group" "this" {
-  name     = var.resource_group_name
+  name     = "${module.abbreviations.base.resource_group}-${var.prefix_name}"
   location = var.location
   tags     = var.tags
 }
