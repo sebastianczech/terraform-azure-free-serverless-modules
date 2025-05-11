@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "terraform"
+    directory: "/modules/abbreviations"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "terraform"
+    directory: "/modules/cosmosdb"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "terraform"
+    directory: "/modules/functions"
+    schedule:
+      interval: "weekly"
