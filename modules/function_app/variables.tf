@@ -8,8 +8,8 @@ variable "storage_account_name" {
   type        = string
 }
 
-variable "name" {
-  description = "The name of the Function App"
+variable "prefix_name" {
+  description = "The prefix for the name of the Function App"
   type        = string
 }
 

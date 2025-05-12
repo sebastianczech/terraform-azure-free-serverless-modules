@@ -9,7 +9,7 @@ data "azurerm_resource_group" "this" {
 
 # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_account
 resource "azurerm_cosmosdb_account" "this" {
-  name                = "${var.name}-${module.abbreviations.database.cosmos_db}"
+  name                = "${module.abbreviations.database.cosmos_db}-${var.prefix_name}"
   location            = data.azurerm_resource_group.this.location
   resource_group_name = data.azurerm_resource_group.this.name
   offer_type          = "Standard"

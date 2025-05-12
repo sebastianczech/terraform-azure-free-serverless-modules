@@ -1,6 +1,6 @@
 output "base" {
   description = "Base/Common Azure resource abbreviations"
-  value       = local.prefix
+  value       = local.base
 }
 
 output "compute" {
@@ -36,7 +36,7 @@ output "monitoring" {
 output "all" {
   description = "All Azure resource abbreviations combined"
   value = merge(
-    local.prefix,
+    local.base,
     local.compute,
     local.network,
     local.database,

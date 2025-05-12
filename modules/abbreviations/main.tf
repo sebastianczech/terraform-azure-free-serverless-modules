@@ -1,6 +1,6 @@
 locals {
   # Base/Common
-  prefix = {
+  base = {
     resource_group   = "rg"
     managed_identity = "id"
     key_vault        = "kv"

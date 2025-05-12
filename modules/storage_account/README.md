@@ -37,7 +37,7 @@ This module provisions an Azure Storage Account in a specified resource group.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_name"></a> [name](#input\_name) | The name of the storage account | `string` | n/a | yes |
+| <a name="input_prefix_name"></a> [prefix\_name](#input\_prefix\_name) | The prefix for the name of the storage account | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to be applied to resources | `map(string)` | `{}` | no |
 
