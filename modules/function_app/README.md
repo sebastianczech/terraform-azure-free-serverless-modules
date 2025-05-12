@@ -1,4 +1,4 @@
-# Azure Functions Module
+# Azure Function App Module
 
 This module provisions an Azure Function App with Python runtime in consumption plan mode.
 
