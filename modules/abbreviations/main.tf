@@ -15,6 +15,7 @@ locals {
     virtual_machine_scale_set = "vmss"
     function_app              = "func"
     app_service               = "app"
+    app_service_plan          = "asp"
     container_apps            = "aca"
     aks                       = "aks"
   }

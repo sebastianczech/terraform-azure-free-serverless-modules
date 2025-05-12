@@ -1,13 +1,17 @@
+module "abbreviations" {
+  source = "../../modules/abbreviations"
+}
+
 # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/resource_group
-data "azurerm_resource_group" "rg" {
+data "azurerm_resource_group" "this" {
   name = var.resource_group_name
 }
 
 # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_account
-resource "azurerm_cosmosdb_account" "db" {
-  name                = var.account_name
-  location            = data.azurerm_resource_group.rg.location
-  resource_group_name = data.azurerm_resource_group.rg.name
+resource "azurerm_cosmosdb_account" "this" {
+  name                = "${var.name}-${module.abbreviations.database.cosmos_db}"
+  location            = data.azurerm_resource_group.this.location
+  resource_group_name = data.azurerm_resource_group.this.name
   offer_type          = "Standard"
   kind                = "GlobalDocumentDB"
 
@@ -22,7 +26,7 @@ resource "azurerm_cosmosdb_account" "db" {
   }
 
   geo_location {
-    location          = data.azurerm_resource_group.rg.location
+    location          = data.azurerm_resource_group.this.location
     failover_priority = 0
   }
 

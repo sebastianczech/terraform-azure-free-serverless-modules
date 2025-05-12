@@ -1,14 +1,10 @@
-# Azure Cosmos DB Module
+# Azure Storage Account Module
 
-This module provisions an Azure Cosmos DB account in serverless mode with free tier capabilities.
+This module provisions an Azure Storage Account in a specified resource group.
 
 ## Features
 
-- Serverless capacity mode
-- Free tier capabilities
-- Single region deployment
-- Session consistency level
-- Standard MongoDB API
+- Standard storage account with LRS replication
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -34,14 +30,14 @@ This module provisions an Azure Cosmos DB account in serverless mode with free t
 
 | Name | Type |
 |------|------|
-| [azurerm_cosmosdb_account.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_account) | resource |
+| [azurerm_storage_account.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account) | resource |
 | [azurerm_resource_group.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/resource_group) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_name"></a> [name](#input\_name) | The name of the Cosmos DB account | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | The name of the storage account | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to be applied to resources | `map(string)` | `{}` | no |
 
@@ -49,7 +45,7 @@ This module provisions an Azure Cosmos DB account in serverless mode with free t
 
 | Name | Description |
 |------|-------------|
-| <a name="output_cosmos_db_endpoint"></a> [cosmos\_db\_endpoint](#output\_cosmos\_db\_endpoint) | The endpoint used to connect to the Cosmos DB account |
-| <a name="output_cosmos_db_id"></a> [cosmos\_db\_id](#output\_cosmos\_db\_id) | The ID of the Cosmos DB account |
-| <a name="output_cosmos_db_primary_key"></a> [cosmos\_db\_primary\_key](#output\_cosmos\_db\_primary\_key) | The primary key for the Cosmos DB account |
+| <a name="output_storage_account_id"></a> [storage\_account\_id](#output\_storage\_account\_id) | The ID of the Storage Account |
+| <a name="output_storage_account_name"></a> [storage\_account\_name](#output\_storage\_account\_name) | The name of the Storage Account |
+| <a name="output_storage_account_primary_access_key"></a> [storage\_account\_primary\_access\_key](#output\_storage\_account\_primary\_access\_key) | The primary access key of the Storage Account |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

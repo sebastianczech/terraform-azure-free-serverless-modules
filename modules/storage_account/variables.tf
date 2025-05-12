@@ -3,13 +3,8 @@ variable "resource_group_name" {
   type        = string
 }
 
-variable "storage_account_name" {
-  description = "The name of the storage account"
-  type        = string
-}
-
 variable "name" {
-  description = "The name of the Function App"
+  description = "The name of the storage account"
   type        = string
 }
 

@@ -3,7 +3,7 @@ variable "resource_group_name" {
   type        = string
 }
 
-variable "account_name" {
+variable "name" {
   description = "The name of the Cosmos DB account"
   type        = string
 }

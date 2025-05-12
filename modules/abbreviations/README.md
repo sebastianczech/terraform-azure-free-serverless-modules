@@ -1,6 +1,6 @@
 # Azure Abbreviations Module
 
-This module provisions an Azure Abbreviations.
+This module provisions an Azure Abbreviations based on [document](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
