@@ -42,8 +42,12 @@ This module provisions an Azure Function App with Python runtime in consumption 
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_min_tls_version"></a> [min\_tls\_version](#input\_min\_tls\_version) | The minimum TLS version to use | `string` | `"1.2"` | no |
+| <a name="input_os_type"></a> [os\_type](#input\_os\_type) | The OS type for the Function App | `string` | `"Linux"` | no |
 | <a name="input_prefix_name"></a> [prefix\_name](#input\_prefix\_name) | The prefix for the name of the Function App | `string` | n/a | yes |
+| <a name="input_python_version"></a> [python\_version](#input\_python\_version) | The version of Python to use | `string` | `"3.11"` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group | `string` | n/a | yes |
+| <a name="input_sku_name"></a> [sku\_name](#input\_sku\_name) | The SKU name for the Function App | `string` | `"Y1"` | no |
 | <a name="input_storage_account_name"></a> [storage\_account\_name](#input\_storage\_account\_name) | The name of the storage account | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to be applied to resources | `map(string)` | `{}` | no |
 

@@ -18,8 +18,8 @@ resource "azurerm_service_plan" "this" {
   name                = "${module.abbreviations.compute.app_service_plan}-${var.prefix_name}"
   resource_group_name = data.azurerm_resource_group.this.name
   location            = data.azurerm_resource_group.this.location
-  os_type             = "Linux"
-  sku_name            = "Y1" # Consumption plan for free tier
+  os_type             = var.os_type
+  sku_name            = var.sku_name
   tags                = var.tags
 }
 
@@ -37,9 +37,9 @@ resource "azurerm_linux_function_app" "this" {
 
   site_config {
     application_stack {
-      python_version = "3.11" # Latest supported Python version
+      python_version = var.python_version
     }
-    minimum_tls_version = "1.2"
+    minimum_tls_version = var.min_tls_version
   }
 
   tags = var.tags
