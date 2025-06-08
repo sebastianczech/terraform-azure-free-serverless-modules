@@ -25,7 +25,7 @@ Currently below Azure services & resources are supported:
 ```mermaid
 C4Context
     title Azure Serverless Architecture Overview
-    
+
     Enterprise_Boundary(azure, "Azure Cloud") {
         System_Boundary(rg, "Resource Group") {
             Container(apim, "API Management", "Gateway", "Manages and secures APIs")
