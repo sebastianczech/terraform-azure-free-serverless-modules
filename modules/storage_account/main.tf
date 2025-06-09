@@ -9,7 +9,7 @@ data "azurerm_resource_group" "this" {
 
 # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account
 resource "azurerm_storage_account" "this" {
-  name                     = "${module.abbreviations.base.storage_account}-${var.prefix_name}"
+  name                     = "${module.abbreviations.base.storage_account}${var.prefix_name}"
   resource_group_name      = data.azurerm_resource_group.this.name
   location                 = data.azurerm_resource_group.this.location
   account_tier             = "Standard"
