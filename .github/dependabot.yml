@@ -5,10 +5,14 @@ updates:
     schedule:
       interval: "weekly"
   - package-ecosystem: "terraform"
-    directory: "/modules/cosmosdb"
+    directory: "/modules/cosmos_db"
     schedule:
       interval: "weekly"
   - package-ecosystem: "terraform"
-    directory: "/modules/functions"
+    directory: "/modules/function_app"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "terraform"
+    directory: "/modules/storage_account"
     schedule:
       interval: "weekly"
