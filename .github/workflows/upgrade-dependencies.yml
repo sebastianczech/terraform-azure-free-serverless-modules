@@ -38,6 +38,11 @@ jobs:
           unzip /tmp/tflint.zip -d /tmp
           sudo mv /tmp/tflint /usr/local/bin/
 
+      - name: Install infracost
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sh
+          infracost --version
+
       - name: Setup terraform
         uses: hashicorp/setup-terraform@v3
         with:
