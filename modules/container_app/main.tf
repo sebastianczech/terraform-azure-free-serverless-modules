@@ -8,8 +8,8 @@ resource "azurerm_container_app_environment" "this" {
 resource "azurerm_container_app" "this" {
   name                         = var.name
   container_app_environment_id = azurerm_container_app_environment.this.id
-  resource_group_name         = var.resource_group_name
-  revision_mode               = "Single"
+  resource_group_name          = var.resource_group_name
+  revision_mode                = "Single"
 
   template {
     container {

@@ -4,7 +4,7 @@ resource "azurerm_static_web_app" "this" {
   location            = var.location
 
   sku_tier = "Free"
-  
+
   app_settings = var.app_settings
 
   tags = var.tags

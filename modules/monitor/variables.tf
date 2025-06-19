@@ -26,14 +26,14 @@ variable "email_receiver_address" {
 variable "metric_alerts" {
   description = "List of metric alerts to create"
   type = list(object({
-    name            = string
-    scopes          = list(string)
-    description     = string
+    name             = string
+    scopes           = list(string)
+    description      = string
     metric_namespace = string
-    metric_name     = string
-    aggregation     = string
-    operator        = string
-    threshold       = number
+    metric_name      = string
+    aggregation      = string
+    operator         = string
+    threshold        = number
   }))
   default = []
 }

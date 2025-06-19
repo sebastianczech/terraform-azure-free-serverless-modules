@@ -5,7 +5,7 @@ resource "azurerm_monitor_action_group" "this" {
 
   email_receiver {
     name                    = var.email_receiver_name
-    email_address          = var.email_receiver_address
+    email_address           = var.email_receiver_address
     use_common_alert_schema = true
   }
 
@@ -17,15 +17,15 @@ resource "azurerm_monitor_metric_alert" "this" {
 
   name                = var.metric_alerts[count.index].name
   resource_group_name = var.resource_group_name
-  scopes             = var.metric_alerts[count.index].scopes
-  description        = var.metric_alerts[count.index].description
+  scopes              = var.metric_alerts[count.index].scopes
+  description         = var.metric_alerts[count.index].description
 
   criteria {
     metric_namespace = var.metric_alerts[count.index].metric_namespace
-    metric_name     = var.metric_alerts[count.index].metric_name
-    aggregation     = var.metric_alerts[count.index].aggregation
-    operator        = var.metric_alerts[count.index].operator
-    threshold       = var.metric_alerts[count.index].threshold
+    metric_name      = var.metric_alerts[count.index].metric_name
+    aggregation      = var.metric_alerts[count.index].aggregation
+    operator         = var.metric_alerts[count.index].operator
+    threshold        = var.metric_alerts[count.index].threshold
   }
 
   action {

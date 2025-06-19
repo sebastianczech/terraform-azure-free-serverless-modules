@@ -30,35 +30,6 @@ module "static_web_app" {
 }
 ```
 
-## Requirements
-
-- Terraform >= 1.0.0
-- AzureRM Provider >= 3.0.0
-
-## Providers
-
-| Name    | Version |
-|---------|---------|
-| azurerm | >= 3.0.0 |
-
-## Inputs
-
-| Name | Description | Type | Required |
-|------|-------------|------|----------|
-| name | The name of the Static Web App | string | yes |
-| resource_group_name | The name of the resource group | string | yes |
-| location | The Azure region where the Static Web App should be created | string | yes |
-| app_settings | A map of app settings to apply to the Static Web App | map(string) | no |
-| tags | A mapping of tags to assign to the resource | map(string) | no |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| id | The ID of the Static Web App |
-| default_host_name | The default host name of the Static Web App |
-| api_key | The API key of the Static Web App |
-
 ## Free Tier Limitations
 
 The Free tier includes:
@@ -67,3 +38,46 @@ The Free tier includes:
 - Built-in CI/CD with GitHub Actions
 - Free SSL certificates
 - Global CDN distribution
+
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 3.0.0 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 3.0.0 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [azurerm_static_web_app.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/static_web_app) | resource |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_app_settings"></a> [app\_settings](#input\_app\_settings) | A map of app settings to apply to the Static Web App | `map(string)` | `{}` | no |
+| <a name="input_location"></a> [location](#input\_location) | The Azure region where the Static Web App should be created | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | The name of the Static Web App | `string` | n/a | yes |
+| <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which to create the Static Web App | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags to assign to the resource | `map(string)` | `{}` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_api_key"></a> [api\_key](#output\_api\_key) | The API key of the Static Web App |
+| <a name="output_default_host_name"></a> [default\_host\_name](#output\_default\_host\_name) | The default host name of the Static Web App |
+| <a name="output_id"></a> [id](#output\_id) | The ID of the Static Web App |
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
