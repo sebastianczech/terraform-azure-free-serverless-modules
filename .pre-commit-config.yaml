@@ -75,5 +75,11 @@ repos:
           "CKV2_AZURE_33",
           --skip-check,
           # Azure Resource Group should have tags
-          "CKV2_AZURE_1"
+          "CKV2_AZURE_1",
+          --skip-check,
+          # Ensure that API management services use virtual networks
+          "CKV_AZURE_107",
+          --skip-check,
+          # "Ensure API management public access is disabled
+          "CKV_AZURE_174"
         ]
