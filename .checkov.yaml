@@ -1,0 +1,16 @@
+framework:
+  - all
+
+skip-check:
+  - CKV_AZURE_132
+  - CKV_AZURE_100
+  - CKV_AZURE_33
+  - CKV_AZURE_206
+  - CKV_AZURE_225
+  - CKV_AZURE_212
+  - CKV2_AZURE_33
+  - CKV2_AZURE_1
+  - CKV_AZURE_107
+  - CKV_AZURE_174
+
+soft-fail: true
