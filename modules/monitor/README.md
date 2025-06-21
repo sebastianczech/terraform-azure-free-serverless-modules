@@ -65,7 +65,9 @@ Azure Monitor free tier includes:
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_abbreviations"></a> [abbreviations](#module\_abbreviations) | ../../modules/abbreviations | n/a |
 
 ## Resources
 
@@ -81,7 +83,7 @@ No modules.
 | <a name="input_email_receiver_address"></a> [email\_receiver\_address](#input\_email\_receiver\_address) | The email address of the receiver | `string` | n/a | yes |
 | <a name="input_email_receiver_name"></a> [email\_receiver\_name](#input\_email\_receiver\_name) | The name of the email receiver | `string` | n/a | yes |
 | <a name="input_metric_alerts"></a> [metric\_alerts](#input\_metric\_alerts) | List of metric alerts to create | <pre>list(object({<br/>    name             = string<br/>    scopes           = list(string)<br/>    description      = string<br/>    metric_namespace = string<br/>    metric_name      = string<br/>    aggregation      = string<br/>    operator         = string<br/>    threshold        = number<br/>  }))</pre> | `[]` | no |
-| <a name="input_name"></a> [name](#input\_name) | The name of the Monitor Action Group | `string` | n/a | yes |
+| <a name="input_prefix_name"></a> [prefix\_name](#input\_prefix\_name) | The prefix name for the Monitor Action Group | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which to create the Monitor resources | `string` | n/a | yes |
 | <a name="input_short_name"></a> [short\_name](#input\_short\_name) | The short name of the action group. This will be used as the abbreviated name for SMS messages | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags to assign to the resource | `map(string)` | `{}` | no |

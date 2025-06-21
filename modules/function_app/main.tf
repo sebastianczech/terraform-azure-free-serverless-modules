@@ -15,7 +15,7 @@ data "azurerm_storage_account" "this" {
 
 # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/service_plan
 resource "azurerm_service_plan" "this" {
-  name                = "${module.abbreviations.compute.app_service_plan}-${var.prefix_name}"
+  name                = "${var.prefix_name}-${module.abbreviations.compute.app_service_plan}"
   resource_group_name = data.azurerm_resource_group.this.name
   location            = data.azurerm_resource_group.this.location
   os_type             = var.os_type
@@ -25,7 +25,7 @@ resource "azurerm_service_plan" "this" {
 
 # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_function_app
 resource "azurerm_linux_function_app" "this" {
-  name                       = "${module.abbreviations.compute.function_app}-${var.prefix_name}"
+  name                       = "${var.prefix_name}-${module.abbreviations.compute.function_app}"
   resource_group_name        = data.azurerm_resource_group.this.name
   location                   = data.azurerm_resource_group.this.location
   storage_account_name       = data.azurerm_storage_account.this.name

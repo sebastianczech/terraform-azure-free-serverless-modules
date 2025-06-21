@@ -1,5 +1,5 @@
-variable "name" {
-  description = "The name of the Monitor Action Group"
+variable "prefix_name" {
+  description = "The prefix name for the Monitor Action Group"
   type        = string
 }
 

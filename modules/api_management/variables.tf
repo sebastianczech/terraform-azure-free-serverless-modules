@@ -1,5 +1,5 @@
-variable "name" {
-  description = "The name of the API Management instance"
+variable "prefix_name" {
+  description = "The prefix name for the API Management instance"
   type        = string
 }
 

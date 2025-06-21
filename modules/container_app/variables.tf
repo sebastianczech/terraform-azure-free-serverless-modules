@@ -1,10 +1,5 @@
-variable "name" {
-  description = "The name of the Container App"
-  type        = string
-}
-
-variable "environment_name" {
-  description = "The name of the Container App Environment"
+variable "prefix_name" {
+  description = "The prefix name for the Container App"
   type        = string
 }
 

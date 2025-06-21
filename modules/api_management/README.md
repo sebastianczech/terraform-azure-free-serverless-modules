@@ -52,7 +52,9 @@ The Consumption tier (free) includes:
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_abbreviations"></a> [abbreviations](#module\_abbreviations) | ../../modules/abbreviations | n/a |
 
 ## Resources
 
@@ -65,7 +67,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_location"></a> [location](#input\_location) | The Azure region where the API Management instance should be created | `string` | n/a | yes |
-| <a name="input_name"></a> [name](#input\_name) | The name of the API Management instance | `string` | n/a | yes |
+| <a name="input_prefix_name"></a> [prefix\_name](#input\_prefix\_name) | The prefix name for the API Management instance | `string` | n/a | yes |
 | <a name="input_publisher_email"></a> [publisher\_email](#input\_publisher\_email) | The email of the publisher/company | `string` | n/a | yes |
 | <a name="input_publisher_name"></a> [publisher\_name](#input\_publisher\_name) | The name of the publisher/company | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which to create the API Management instance | `string` | n/a | yes |
