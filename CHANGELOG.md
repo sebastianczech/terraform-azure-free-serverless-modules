@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1](https://github.com/sebastianczech/terraform-azure-free-serverless-modules/compare/v1.0.0...v1.0.1) (2025-06-22)
+
+### Code Refactoring
+
+* Remove name variable, use prefix_name and abbreviation ([#6](https://github.com/sebastianczech/terraform-azure-free-serverless-modules/issues/6)) ([3d5d845](https://github.com/sebastianczech/terraform-azure-free-serverless-modules/commit/3d5d845b8a62fa3e3acd4d27ff532473f0fad423))
+
 ## 1.0.0 (2025-06-20)
 
 ### Features
