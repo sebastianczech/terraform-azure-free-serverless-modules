@@ -53,7 +53,9 @@ The free tier includes:
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_abbreviations"></a> [abbreviations](#module\_abbreviations) | ../../modules/abbreviations | n/a |
 
 ## Resources
 
@@ -69,11 +71,10 @@ No modules.
 | <a name="input_container_image"></a> [container\_image](#input\_container\_image) | The container image to deploy | `string` | n/a | yes |
 | <a name="input_container_name"></a> [container\_name](#input\_container\_name) | The name of the container | `string` | n/a | yes |
 | <a name="input_cpu_cores"></a> [cpu\_cores](#input\_cpu\_cores) | The number of CPU cores to allocate to the container | `number` | `0.5` | no |
-| <a name="input_environment_name"></a> [environment\_name](#input\_environment\_name) | The name of the Container App Environment | `string` | n/a | yes |
 | <a name="input_location"></a> [location](#input\_location) | The Azure region where the Container App should be created | `string` | n/a | yes |
 | <a name="input_log_analytics_workspace_id"></a> [log\_analytics\_workspace\_id](#input\_log\_analytics\_workspace\_id) | The ID of the Log Analytics workspace to use for logging | `string` | n/a | yes |
 | <a name="input_memory_size"></a> [memory\_size](#input\_memory\_size) | The amount of memory to allocate to the container in GB | `string` | `"1Gi"` | no |
-| <a name="input_name"></a> [name](#input\_name) | The name of the Container App | `string` | n/a | yes |
+| <a name="input_prefix_name"></a> [prefix\_name](#input\_prefix\_name) | The prefix name for the Container App | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which to create the Container App | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags to assign to the resource | `map(string)` | `{}` | no |
 

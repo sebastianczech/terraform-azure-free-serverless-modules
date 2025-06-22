@@ -1,5 +1,5 @@
-variable "name" {
-  description = "The name of the Static Web App"
+variable "prefix_name" {
+  description = "The prefix name for the Static Web App"
   type        = string
 }
 

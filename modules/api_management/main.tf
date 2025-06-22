@@ -1,5 +1,9 @@
+module "abbreviations" {
+  source = "../../modules/abbreviations"
+}
+
 resource "azurerm_api_management" "this" {
-  name                = var.name
+  name                = "${var.prefix_name}-${module.abbreviations.integration.api_management}"
   location            = var.location
   resource_group_name = var.resource_group_name
   publisher_name      = var.publisher_name

@@ -1,5 +1,9 @@
+module "abbreviations" {
+  source = "../../modules/abbreviations"
+}
+
 resource "azurerm_monitor_action_group" "this" {
-  name                = var.name
+  name                = "${var.prefix_name}-${module.abbreviations.monitoring.monitor_action_group}"
   resource_group_name = var.resource_group_name
   short_name          = var.short_name
 
@@ -15,7 +19,7 @@ resource "azurerm_monitor_action_group" "this" {
 resource "azurerm_monitor_metric_alert" "this" {
   count = length(var.metric_alerts)
 
-  name                = var.metric_alerts[count.index].name
+  name                = "${var.prefix_name}-${module.abbreviations.monitoring.monitor_alert}-${var.metric_alerts[count.index].name}"
   resource_group_name = var.resource_group_name
   scopes              = var.metric_alerts[count.index].scopes
   description         = var.metric_alerts[count.index].description

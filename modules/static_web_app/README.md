@@ -55,7 +55,9 @@ The Free tier includes:
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_abbreviations"></a> [abbreviations](#module\_abbreviations) | ../../modules/abbreviations | n/a |
 
 ## Resources
 
@@ -69,7 +71,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_app_settings"></a> [app\_settings](#input\_app\_settings) | A map of app settings to apply to the Static Web App | `map(string)` | `{}` | no |
 | <a name="input_location"></a> [location](#input\_location) | The Azure region where the Static Web App should be created | `string` | n/a | yes |
-| <a name="input_name"></a> [name](#input\_name) | The name of the Static Web App | `string` | n/a | yes |
+| <a name="input_prefix_name"></a> [prefix\_name](#input\_prefix\_name) | The prefix name for the Static Web App | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which to create the Static Web App | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags to assign to the resource | `map(string)` | `{}` | no |
 
