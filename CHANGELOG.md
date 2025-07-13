@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2](https://github.com/sebastianczech/terraform-azure-free-serverless-modules/compare/v1.0.1...v1.0.2) (2025-07-13)
+
+### Miscellaneous Chores
+
+* Upgrade dependencies ([#10](https://github.com/sebastianczech/terraform-azure-free-serverless-modules/issues/10)) ([cd3d498](https://github.com/sebastianczech/terraform-azure-free-serverless-modules/commit/cd3d49895de60ea58e8b6fa11cb3777bbcef9a1a))
+
 ## [1.0.1](https://github.com/sebastianczech/terraform-azure-free-serverless-modules/compare/v1.0.0...v1.0.1) (2025-06-22)
 
 ### Code Refactoring
