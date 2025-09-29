@@ -3,16 +3,16 @@ updates:
   - package-ecosystem: "terraform"
     directory: "/modules/abbreviations"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
   - package-ecosystem: "terraform"
     directory: "/modules/cosmos_db"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
   - package-ecosystem: "terraform"
     directory: "/modules/function_app"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
   - package-ecosystem: "terraform"
     directory: "/modules/storage_account"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
